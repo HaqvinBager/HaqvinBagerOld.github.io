@@ -24,8 +24,8 @@
 	#index {
 		position: absolute;
 		width: 1920px;
-		height: 1789px;
-		background-color: rgba(0,0,0,1);
+		height: 1612px;
+		background-color: rgba(32,32,32,1);
 		overflow: hidden;
 		--web-view-name: index;
 		--web-view-id: index;
@@ -36,16 +36,14 @@
 	
 	
 	}
-	@keyframes  {
+	@keyframes fadein {
 	
-	
-	}
-	@keyframes  {
-	
-	
-	}
-	@keyframes  {
-	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
 	
 	}
 	#Projects {
@@ -53,7 +51,7 @@
 		width: 1840px;
 		height: 944px;
 		left: 40px;
-		top: 807px;
+		top: 516px;
 		overflow: visible;
 	}
 	#Specialization_Button {
@@ -97,6 +95,10 @@
 		left: 1240px;
 		top: 0px;
 		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Project.html;
+		cursor: pointer;
 	}
 	#Spite_Bloodloss {
 		left: 98px;
@@ -112,7 +114,7 @@
 		font-size: 50px;
 		color: rgba(255,255,255,1);
 	}
-	#RECT_p {
+	#RECT_q {
 		position: absolute;
 		width: 600px;
 		height: 884px;
@@ -127,6 +129,10 @@
 		left: 620px;
 		top: 0px;
 		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Project.html;
+		cursor: pointer;
 	}
 	#I_AM {
 		left: 243px;
@@ -142,7 +148,7 @@
 		font-size: 50px;
 		color: rgba(255,255,255,1);
 	}
-	#RECT_s {
+	#RECT_t {
 		position: absolute;
 		width: 600px;
 		height: 884px;
@@ -154,8 +160,8 @@
 		position: absolute;
 		width: 1945px;
 		height: 369px;
-		left: -14px;
-		top: 282px;
+		left: -12px;
+		top: 107px;
 		overflow: visible;
 	}
 	#Border {
@@ -215,58 +221,25 @@
 		position: absolute;
 		width: 1926px;
 		height: 67px;
-		left: -3px;
+		left: 0px;
 		top: 0px;
 		overflow: visible;
 	}
-	#Border_z {
+	#Border_ {
 		fill: rgba(13,13,13,1);
 	}
-	.Border_z {
-		position: absolute;
+	.Border_ {
+		position: fixed;
 		overflow: visible;
 		width: 1926px;
 		height: 67px;
 		left: 0px;
 		top: 0px;
 	}
-	#Home_Button {
-		position: absolute;
-		width: 131px;
-		height: 60px;
-		left: 35px;
-		top: 4px;
-		overflow: visible;
-	}
-	#CONTACT_RECT {
-		fill: transparent;
-	}
-	.CONTACT_RECT {
-		position: absolute;
-		overflow: visible;
-		width: 131px;
-		height: 60px;
-		left: 0px;
-		top: 0px;
-	}
-	#HOME {
-		left: 36px;
-		top: 18px;
-		position: absolute;
-		overflow: visible;
-		width: 61px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Verdana;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		color: rgba(255,255,255,1);
-	}
 	#SEPARATOR {
 		fill: transparent;
 		stroke: rgba(255,255,255,1);
-		stroke-width: 1px;
+		stroke-width: 1.5px;
 		stroke-linejoin: miter;
 		stroke-linecap: butt;
 		stroke-miterlimit: 4;
@@ -274,54 +247,17 @@
 	}
 	.SEPARATOR {
 		overflow: visible;
-		position: absolute;
-		width: 1px;
+		position: fixed;
+		width: 1.5px;
 		height: 24px;
-		left: 175px;
+		left: 172px;
 		top: 22px;
 		transform: matrix(1,0,0,1,0,0);
-	}
-	#Projects_Button {
-		position: absolute;
-		width: 131px;
-		height: 60px;
-		left: 184px;
-		top: 4px;
-		overflow: visible;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Project.html;
-		cursor: pointer;
-	}
-	#RECT_ {
-		fill: transparent;
-	}
-	.RECT_ {
-		position: absolute;
-		overflow: visible;
-		width: 131px;
-		height: 60px;
-		left: 0px;
-		top: 0px;
-	}
-	#PROJECTS {
-		left: 14px;
-		top: 18px;
-		position: absolute;
-		overflow: visible;
-		width: 104px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Verdana;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		color: rgba(255,255,255,1);
 	}
 	#SEPARATOR_ {
 		fill: transparent;
 		stroke: rgba(255,255,255,1);
-		stroke-width: 1px;
+		stroke-width: 1.5px;
 		stroke-linejoin: miter;
 		stroke-linecap: butt;
 		stroke-miterlimit: 4;
@@ -329,24 +265,74 @@
 	}
 	.SEPARATOR_ {
 		overflow: visible;
-		position: absolute;
-		width: 1px;
+		position: fixed;
+		width: 1.5px;
 		height: 24px;
-		left: 323px;
+		left: 320px;
 		top: 22px;
 		transform: matrix(1,0,0,1,0,0);
 	}
-	#Softblob_Button {
-		position: absolute;
-		width: 131px;
-		height: 60px;
-		left: 332px;
-		top: 4px;
+	#SEPARATOR_ba {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.SEPARATOR_ba {
 		overflow: visible;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Softblob.html;
-		cursor: pointer;
+		position: fixed;
+		width: 1.5px;
+		height: 24px;
+		left: 468px;
+		top: 22px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#GitHub:hover {
+		width: 34px;
+		height: 34px;
+		left: 1778px;
+		top: 17px;
+	}
+	#GitHub {
+		position: fixed;
+		width: 32px;
+		height: 32px;
+		left: 1779px;
+		top: 18px;
+		overflow: visible;
+		transition: all .3s ease-out;
+	}
+	#Twitter:hover {
+		width: 34px;
+		height: 34px;
+		left: 1850px;
+		top: 17px;
+	}
+	#Twitter {
+		position: fixed;
+		width: 32px;
+		height: 32px;
+		left: 1851px;
+		top: 18px;
+		overflow: visible;
+		transition: all .3s ease-out;
+	}
+	#LinkedIn:hover {
+		width: 34px;
+		height: 34px;
+		top: 17px;
+	}
+	#LinkedIn {
+		position: fixed;
+		width: 32px;
+		height: 32px;
+		left: 1707px;
+		top: 18px;
+		overflow: visible;
+		transition: all .3s ease-out;
 	}
 	#RECT_ba {
 		fill: transparent;
@@ -356,68 +342,13 @@
 		overflow: visible;
 		width: 131px;
 		height: 60px;
-		left: 0px;
-		top: 0px;
-	}
-	#SOFTBLOB {
-		left: 12px;
-		top: 18px;
-		position: absolute;
-		overflow: visible;
-		width: 109px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Verdana;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		color: rgba(255,255,255,1);
-	}
-	#SEPARATOR_bb {
-		fill: transparent;
-		stroke: rgba(255,255,255,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.SEPARATOR_bb {
-		overflow: visible;
-		position: absolute;
-		width: 1px;
-		height: 24px;
-		left: 471px;
-		top: 22px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Contact_Button {
-		position: absolute;
-		width: 131px;
-		height: 60px;
-		left: 480px;
+		left: 477px;
 		top: 4px;
-		overflow: visible;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Contact.html;
-		cursor: pointer;
-	}
-	#RECT_bd {
-		fill: transparent;
-	}
-	.RECT_bd {
-		position: absolute;
-		overflow: visible;
-		width: 131px;
-		height: 60px;
-		left: 0px;
-		top: 0px;
 	}
 	#CONTACT {
-		left: 17px;
-		top: 18px;
-		position: absolute;
+		left: 494px;
+		top: 22px;
+		position: fixed;
 		overflow: visible;
 		width: 97px;
 		white-space: nowrap;
@@ -428,54 +359,220 @@
 		font-size: 20px;
 		color: rgba(255,255,255,1);
 	}
-	#GitHub {
-		mix-blend-mode: normal;
-		position: absolute;
-		width: 51px;
+	#ContactBorder:hover {
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	#ContactBorder {
+		fill: transparent;
+		transition: all .3s ease-out;
+	}
+	.ContactBorder {
+		position: fixed;
+		overflow: visible;
+		width: 112px;
 		height: 51px;
-		left: 1832px;
+		left: 486px;
 		top: 8px;
-		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Web_1920___1.html;
+		cursor: pointer;
 	}
-	#Rectangle_10 {
-		position: absolute;
-		width: 51px;
-		height: 51px;
-		left: 0px;
-		top: 0px;
+	#HOME {
+		left: 68px;
+		top: 22px;
+		position: fixed;
 		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Verdana;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
 	}
-	#Twitter {
-		position: absolute;
-		width: 51px;
+	#ContactBorder_bg:hover {
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	#ContactBorder_bg {
+		fill: transparent;
+		transition: all .3s ease-out;
+	}
+	.ContactBorder_bg {
+		position: fixed;
+		overflow: visible;
+		width: 112px;
 		height: 51px;
-		left: 1751px;
+		left: 42px;
 		top: 8px;
-		overflow: visible;
 	}
-	#Rectangle_11 {
-		position: absolute;
-		width: 51px;
-		height: 51px;
-		left: 0px;
-		top: 0px;
+	#PROJECTS {
+		left: 195px;
+		top: 22px;
+		position: fixed;
 		overflow: visible;
+		width: 104px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Verdana;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
 	}
-	#LinkedIn {
-		position: absolute;
-		width: 51px;
+	#ContactBorder_bj:hover {
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	#ContactBorder_bj {
+		fill: transparent;
+		transition: all .3s ease-out;
+	}
+	.ContactBorder_bj {
+		position: fixed;
+		overflow: visible;
+		width: 112px;
 		height: 51px;
-		left: 1670px;
+		left: 190px;
 		top: 8px;
-		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Project.html;
+		cursor: pointer;
 	}
-	#Rectangle_12 {
-		position: absolute;
-		width: 51px;
-		height: 51px;
-		left: 0px;
-		top: 0px;
+	#SOFTBLOB {
+		left: 340px;
+		top: 22px;
+		position: fixed;
 		overflow: visible;
+		width: 109px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Verdana;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#ContactBorder_bm:hover {
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	#ContactBorder_bm {
+		fill: transparent;
+		transition: all .3s ease-out;
+	}
+	.ContactBorder_bm {
+		position: fixed;
+		overflow: visible;
+		width: 112px;
+		height: 51px;
+		left: 338px;
+		top: 8px;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Softblob.html;
+		cursor: pointer;
+	}
+	#Border_br {
+		fill: rgba(13,13,13,1);
+	}
+	.Border_br {
+		position: absolute;
+		overflow: visible;
+		width: 1926px;
+		height: 67px;
+		left: -3px;
+		top: 1545px;
+	}
+	#Mail {
+		left: 651px;
+		top: 1569px;
+		position: absolute;
+		overflow: visible;
+		width: 40px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Verdana;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#haqvinbagergmailcom {
+		left: 693px;
+		top: 1569px;
+		position: absolute;
+		overflow: visible;
+		width: 206px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Verdana;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#Telephone {
+		left: 938px;
+		top: 1569px;
+		position: absolute;
+		overflow: visible;
+		width: 89px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Verdana;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#ID46737329964 {
+		left: 1029px;
+		top: 1569px;
+		position: absolute;
+		overflow: visible;
+		width: 126px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Verdana;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#CV_pdf {
+		left: 1194px;
+		top: 1569px;
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Verdana;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
 	}
 </style>
 <script id="applicationScript">
@@ -3327,18 +3424,18 @@ window.application = new Application();
 				<span>Specialization Project</span><br>
 			</div>
 		</div>
-		<div id="Bloodloss_Button" class="Bloodloss_Button">
+		<div onclick="application.goToTargetView(event)" id="Bloodloss_Button" class="Bloodloss_Button">
 			<div id="Spite_Bloodloss">
 				<span>Spite: Bloodloss</span>
 			</div>
-			<img id="RECT_p" src="RECT_p.png" srcset="RECT_p.png 1x, RECT_p@2x.png 2x">
+			<img id="RECT_q" src="RECT_q.png" srcset="RECT_q.png 1x, RECT_q@2x.png 2x">
 				
 		</div>
-		<div id="I_AM_Button" class="I_AM_Button">
+		<div onclick="application.goToTargetView(event)" id="I_AM_Button" class="I_AM_Button">
 			<div id="I_AM">
 				<span>I AM</span>
 			</div>
-			<img id="RECT_s" src="RECT_s.png" srcset="RECT_s.png 1x, RECT_s@2x.png 2x">
+			<img id="RECT_t" src="RECT_t.png" srcset="RECT_t.png 1x, RECT_t@2x.png 2x">
 				
 		</div>
 	</div>
@@ -3357,70 +3454,85 @@ window.application = new Application();
 		</div>
 	</div>
 	<div id="Header">
-		<svg class="Border_z">
-			<rect id="Border_z" rx="0" ry="0" x="0" y="0" width="1926" height="67">
+		<svg class="Border_">
+			<rect id="Border_" rx="0" ry="0" x="0" y="0" width="1926" height="67">
 			</rect>
 		</svg>
-		<div id="Home_Button" class="Home_Button">
-			<svg class="CONTACT_RECT">
-				<rect id="CONTACT_RECT" rx="0" ry="0" x="0" y="0" width="131" height="60">
-				</rect>
-			</svg>
-			<div id="HOME">
-				<span>HOME</span>
-			</div>
-		</div>
-		<svg class="SEPARATOR" viewBox="0 0 1 24">
+		<svg class="SEPARATOR" viewBox="0 0 1.5 24">
 			<path id="SEPARATOR" d="M 0 0 L 0 24">
 			</path>
 		</svg>
-		<div onclick="application.goToTargetView(event)" id="Projects_Button" class="Projects_Button">
-			<svg class="RECT_">
-				<rect id="RECT_" rx="0" ry="0" x="0" y="0" width="131" height="60">
-				</rect>
-			</svg>
-			<div id="PROJECTS">
-				<span>PROJECTS</span>
-			</div>
-		</div>
-		<svg class="SEPARATOR_" viewBox="0 0 1 24">
+		<svg class="SEPARATOR_" viewBox="0 0 1.5 24">
 			<path id="SEPARATOR_" d="M 0 0 L 0 24">
 			</path>
 		</svg>
-		<div onclick="application.goToTargetView(event)" id="Softblob_Button" class="Softblob_Button">
-			<svg class="RECT_ba">
-				<rect id="RECT_ba" rx="0" ry="0" x="0" y="0" width="131" height="60">
-				</rect>
-			</svg>
-			<div id="SOFTBLOB">
-				<span>SOFTBLOB</span>
-			</div>
-		</div>
-		<svg class="SEPARATOR_bb" viewBox="0 0 1 24">
-			<path id="SEPARATOR_bb" d="M 0 0 L 0 24">
+		<svg class="SEPARATOR_ba" viewBox="0 0 1.5 24">
+			<path id="SEPARATOR_ba" d="M 0 0 L 0 24">
 			</path>
 		</svg>
-		<div onclick="application.goToTargetView(event)" id="Contact_Button" class="Contact_Button">
-			<svg class="RECT_bd">
-				<rect id="RECT_bd" rx="0" ry="0" x="0" y="0" width="131" height="60">
-				</rect>
-			</svg>
-			<div id="CONTACT">
-				<span>CONTACT</span>
-			</div>
+		<a href="https://github.com/HaqvinBager">
+		<img id="GitHub" src="GitHub.png" srcset="GitHub.png 1x, GitHub@2x.png 2x">
+			
+		</a>
+		<a href="https://twitter.com/HaqBag">
+		<img id="Twitter" src="Twitter.png" srcset="Twitter.png 1x, Twitter@2x.png 2x">
+			
+		</a>
+		<a href="https://www.linkedin.com/in/haqvin-bager-325064129/">
+		<img id="LinkedIn" src="LinkedIn.png" srcset="LinkedIn.png 1x, LinkedIn@2x.png 2x">
+			
+		</a>
+		<svg class="RECT_ba">
+			<rect id="RECT_ba" rx="0" ry="0" x="0" y="0" width="131" height="60">
+			</rect>
+		</svg>
+		<div id="CONTACT">
+			<span>CONTACT</span>
 		</div>
-		<div id="GitHub" class="GitHub">
-			<img id="Rectangle_10" src="Rectangle_10.png" srcset="Rectangle_10.png 1x, Rectangle_10@2x.png 2x">
-				
+		<svg class="ContactBorder">
+			<rect onclick="application.goToTargetView(event)" id="ContactBorder" rx="25.5" ry="25.5" x="0" y="0" width="112" height="51">
+			</rect>
+		</svg>
+		<div id="HOME">
+			<span>HOME</span>
 		</div>
-		<div id="Twitter" class="Twitter">
-			<img id="Rectangle_11" src="Rectangle_11.png" srcset="Rectangle_11.png 1x, Rectangle_11@2x.png 2x">
-				
+		<svg class="ContactBorder_bg">
+			<rect id="ContactBorder_bg" rx="25.5" ry="25.5" x="0" y="0" width="112" height="51">
+			</rect>
+		</svg>
+		<div id="PROJECTS">
+			<span>PROJECTS</span>
 		</div>
-		<div id="LinkedIn" class="LinkedIn">
-			<img id="Rectangle_12" src="Rectangle_12.png" srcset="Rectangle_12.png 1x, Rectangle_12@2x.png 2x">
-				
+		<svg class="ContactBorder_bj">
+			<rect onclick="application.goToTargetView(event)" id="ContactBorder_bj" rx="25.5" ry="25.5" x="0" y="0" width="112" height="51">
+			</rect>
+		</svg>
+		<div id="SOFTBLOB">
+			<span>SOFTBLOB</span>
 		</div>
+		<svg class="ContactBorder_bm">
+			<rect onclick="application.goToTargetView(event)" id="ContactBorder_bm" rx="25.5" ry="25.5" x="0" y="0" width="112" height="51">
+			</rect>
+		</svg>
+	</div>
+	<svg class="Border_br">
+		<rect id="Border_br" rx="0" ry="0" x="0" y="0" width="1926" height="67">
+		</rect>
+	</svg>
+	<div id="Mail">
+		<span>Mail:</span>
+	</div>
+	<div id="haqvinbagergmailcom">
+		<span>haqvin.bager@gmail.com</span>
+	</div>
+	<div id="Telephone">
+		<span>Telephone:</span>
+	</div>
+	<div id="ID46737329964">
+		<span>+46737329964</span>
+	</div>
+	<div id="CV_pdf">
+		<span>CV (pdf)</span>
 	</div>
 </div>
 </body>
